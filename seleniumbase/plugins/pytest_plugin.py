@@ -147,7 +147,7 @@ def pytest_addoption(parser):
         dest="browser",
         type=str.lower,
         choices=constants.ValidBrowsers.valid_browsers,
-        default=constants.Browser.EDGE,
+        default=constants.Browser.GOOGLE_CHROME,
         help="""Specifies the web browser to use. Default: Chrome.
                 Examples: (--browser=edge OR --browser=firefox)""",
     )

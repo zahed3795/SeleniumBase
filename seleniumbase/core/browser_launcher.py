@@ -2904,10 +2904,8 @@ def get_driver(
         if browser:
             browser_name = browser
         else:
-            browser_name = "edge"  # The default if not specified
+            browser_name = "chrome"  # The default if not specified
     browser_name = browser_name.lower()
-    #browser_name = 'edge'
-    print(browser_name)
     if headless2 and browser_name == constants.Browser.FIREFOX:
         headless2 = False  # Only for Chromium
         headless = True
